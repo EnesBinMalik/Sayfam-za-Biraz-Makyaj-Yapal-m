@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg-base: #f8fafc;
+    --color-surface: #ffffff;
+    --color-text-main: #0f172a;
+    --color-text-muted: #64748b;
+    --color-primary: #2563eb;
+    --color-primary-hover: #1d4ed8;
+    --color-accent: #f59e0b;
+    --color-border: #e2e8f0;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--color-bg-base);
+    color: var(--color-text-main);
+  }
+}
+
+.font-display {
+  font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.font-editorial {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-code {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Specific requirement from assignment: list-style-position: inside */
+.list-inside-bullet {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.list-outside-bullet {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+/* Raw HTML Simulation Mode when makeup is disabled */
+.raw-html-mode {
+  font-family: 'Times New Roman', Times, serif !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.raw-html-mode * {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transition: none !important;
+  letter-spacing: normal !important;
+}
+
+.raw-html-mode a {
+  color: #0000ee !important;
+  text-decoration: underline !important;
+}
+
+.raw-html-mode button {
+  background-color: #f0f0f0 !important;
+  color: #000000 !important;
+  border: 2px outset #767676 !important;
+  padding: 1px 6px !important;
+  font-family: inherit !important;
+}
